@@ -1,0 +1,124 @@
+Lab 15 Part 1
+
+#Lab 15
+#Emrich-Michael Perrier
+
+def getCoefs():
+    a, b, c = eval(input("Type the coefficient of the x-squared term, the x term, and the constant term in the format x, x, x: "))
+    return a, b, c
+
+def computeQuad(a,b,c,x):
+    y = (a*x*x) + (b*x) + c
+    return y
+
+def main():
+    a, b, c = getCoefs()
+    for i in range(-10,11):
+        x=i*0.1
+        y=computeQuad(a,b,c,x)
+        print("({0:.1f},{1:.1f})".format(x,y))
+        
+def main2():
+    a, b, c = getCoefs()
+    counter = -10
+    while counter<11:
+        x=counter*0.1
+        y=computeQuad(a,b,c,x)
+        print("({0:.1f},{1:.1f})".format(x,y))
+        counter += 1
+        
+def main3():
+    a, b, c = getCoefs()
+    counter = -1
+    while counter<1.0:
+        x=counter
+        y=computeQuad(a,b,c,x)
+        print("({0:.1f},{1:.1f})".format(x,y))
+        counter += 0.1
+        
+main3()
+
+>>> %Run Lab15p1.py
+Type the coefficient of the x-squared term, the x term, and the constant term in the format x, x, x: 2, 2, 1
+(-1.0,1.0)
+(-0.9,0.8)
+(-0.8,0.7)
+(-0.7,0.6)
+(-0.6,0.5)
+(-0.5,0.5)
+(-0.4,0.5)
+(-0.3,0.6)
+(-0.2,0.7)
+(-0.1,0.8)
+(-0.0,1.0)
+(0.1,1.2)
+(0.2,1.5)
+(0.3,1.8)
+(0.4,2.1)
+(0.5,2.5)
+(0.6,2.9)
+(0.7,3.4)
+(0.8,3.9)
+(0.9,4.4)
+(1.0,5.0)\
+
+
+Lab 15 Part 2
+#Lab 15 P2
+#Emrich-Michael Perrier
+
+def getRecipe1():
+    moredata = "yes"
+    total = 0
+    ingredientNum = 0
+    while moredata == "yes":
+        input("Name of ingredient: ")
+        weight = eval(input("Weight of ingredient in grams: "))
+        total = total + weight
+        ingredientNum += 1
+        moredata = input("Are there more ingredients: ")
+        if moredata == "no":
+            return total, ingredientNum
+        
+def getRecipe2():
+    moredata = ""
+    total = 0
+    ingredientNum = 0
+    print("write 'no' when there are no more ingredients to input")
+    while moredata == "":
+        input("Name of ingredient: ")
+        weight = eval(input("Weight of ingredient in grams: "))
+        total = total + weight
+        ingredientNum += 1
+        moredata = input("")
+        if moredata == "no":
+            return total, ingredientNum
+        
+def main():
+    total, i = getRecipe2()
+    print("Total grams of ingredients:", total)
+    print("Total number of ingredients:", i)
+    
+main()
+
+========================= RESTART =========================
+>>> %Run Lab15p2.py
+write 'no' when there are no more ingredients to input
+Name of ingredient: butter
+Weight of ingredient in grams: 225
+
+Name of ingredient: sugar
+Weight of ingredient in grams: 225
+
+Name of ingredient: vanilla
+Weight of ingredient in grams: 4
+
+Name of ingredient: egg
+Weight of ingredient in grams: 44
+
+Name of ingredient: baking powder
+Weight of ingredient in grams: 8
+no
+Total grams of ingredients: 506
+Total number of ingredients: 5
+>>> 

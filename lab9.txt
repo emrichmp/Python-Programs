@@ -1,0 +1,43 @@
+#Lab 9.py
+#Emrich-Michael Perrier
+#Program computes average word length
+
+def main():
+    #infile=open("Seasons.txt","r")
+    f = input("Enter input file name: ")
+    infile=open(f)
+    of = input("Enter the output file name: ")
+    outfile=open(of,"w+")
+    #Get phrase
+    #p = input("Enter a phrase: ")
+    for line in f:
+        p = infile.readline()
+        outfile.write(p)
+    #Compute data with phrase
+        w = p.split()
+        wn = len(w)
+        s = ""
+        l = len(s.join(w))
+        mean = round((l/wn),3)
+        #print(mean)
+        outfile.write(str(mean))
+    infile.close()
+    outfile.close()
+    #print the average
+    #print("'", p,"'", "has an average word length of ", mean)
+main()
+
+
+Input: 
+Enter input file name: Seasons.txt
+Enter the output file name: seasonstats.txt
+
+Output:
+Thirty days hath september
+5.75
+April, June and November
+5.25
+All the rest have thirty-one
+4.8
+Except February, which has twenty-eight.
+7.2

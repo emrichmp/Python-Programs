@@ -1,0 +1,109 @@
+Elf File Output
+>>> E()
+*****
+*
+****
+*
+******
+>>> F()
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'F' is not defined
+>>> E()
+*****
+*
+****
+*
+******
+>>> F()
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 'F' is not defined
+>>> %Run Elf.py
+>>> F()
+-----
+|
+|--
+|
+|
+>>> %Run Elf.py
+>>> H()
+*   *
+*   *
+*****
+*   *
+*   *
+>>> %Run Elf.py
+>>> I()
+-----
+  |  
+  |  
+  |  
+-----
+>>> %Run Elf.py
+>>> L()
+|    
+|    
+|    
+|    
+-----
+>>> %Run Elf.py
+>>> T()
+-----
+  |  
+  |  
+  |  
+  |  
+>>> %Run Elf.py
+-----
+  |  
+  |  
+  |  
+  |  
+*   *
+*   *
+*****
+*   *
+*   *
+*****
+*
+****
+*
+******
+
+*****
+*
+****
+*
+******
+|    
+|    
+|    
+|    
+-----
+-----
+|
+|--
+|
+|
+
+-----
+|
+|--
+|
+|
+-----
+  |  
+  |  
+  |  
+-----
+|    
+|    
+|    
+|    
+-----
+*****
+*
+****
+*
+******

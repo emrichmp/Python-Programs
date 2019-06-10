@@ -1,0 +1,53 @@
+Python 3.7.1 (bundled)
+>>> %Run Cone.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Cone.py", line 10
+    volume = (((math.pi*r**2)h)/3)
+                             ^
+SyntaxError: invalid syntax
+>>> %Run Cone.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Cone.py", line 10
+    volume = (((math.pi*(r**2))h)/3)
+                               ^
+SyntaxError: invalid syntax
+>>> %Run Cone.py
+Enter height of the Cone: 1
+Enter Radius of the Cone: 10
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Cone.py", line 16, in <module>
+    main()
+  File "H:\App-SU\Python Programs\Cone.py", line 14, in main
+    print(volume," Cubic units")
+NameError: name 'volume' is not defined
+>>> %Run Cone.py
+Enter height of the Cone: 1
+Enter Radius of the Cone: 10
+629.8854195670248  Square units
+>>> %Run Cone.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Cone.py", line 10
+    v = (((math.pi*(r**2))h)/3)
+                          ^
+SyntaxError: invalid syntax
+>>> %Run Cone.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Cone.py", line 14
+    print(v" Cubic units")
+                        ^
+SyntaxError: invalid syntax
+>>> %Run Cone.py
+Enter height of the Cone: 1
+Enter Radius of the Cone: 10
+104.71975511965977  Cubic units
+629.8854195670248  Square units
+>>> %Run Cone.py
+Enter height of the Cone: 1
+Enter Radius of the Cone: 10
+104.71975511965977  Cubic units
+629.8854195670248  Square units
+>>> %Run Cone.py
+Enter height of the Cone: 10
+Enter Radius of the Cone: 1
+10.471975511965976  Cubic units
+34.71420807439434  Square units

@@ -1,0 +1,587 @@
+Python 3.6.1
+#Emrich-Michael Perrier
+x = 200
+y = 5
+z = 32
+w = 17
+
+t = 8.1
+u = 14.0
+v = -36.9
+
+
+# Enter 19
+q=eval(input("Enter a whole number from 10 to 20: "))
+# Enter 3 and 5
+r,s = eval(input("Enter two numbers, separated by a comma:"))
+quot=q//r
+rem=q%r
+divFl=r/s
+
+
+result = z/y
+result = w%y + z//y
+result = 2**y
+result = w + z*x - r
+result = z * y - w // 8
+result = y * 2 % 6
+
+outcome = w % t * 10
+outcome = t + 20 / 4
+outcome = 10 * v-5
+outcome = result + 5000
+
+for k in range(2, 40, 10):
+    print(k, end=" ")
+    print("***", end=' ')
+print()    
+print("done skipping!")
+
+a = 234 // 10
+b = 234 % 10
+c = 234 // 100
+d = 234 % 100
+e = 234 / 10 % 10
+
+#Part II goes here.
+#the code to read num
+num = eval(input("Enter a three digit number "))
+#the code to compute ones
+ones = num % 10
+#the code to compute tens
+#tens = ((num % 100) - ones)/10
+tens = (num % 100)//10
+#The code to compute hundreds
+huns = num // 100
+#the code to print ones
+print("The ones digit is: ",  ones)
+#the code to print tens
+print("The tens digit is: ",  tens)
+#the code to print hundreds
+print("The Hundreds digit is: ", huns)
+
+#Enter a three digit number 938
+#The ones digit is:  8
+#The tens digit is:  3
+#The Hundreds digit is:  9
+
+#Enter a three digit number 258
+#The ones digit is:  8
+#The tens digit is:  5
+#The Hundreds digit is:  2
+
+#Enter a three digit number 158
+#The ones digit is:  8
+#The tens digit is:  5
+#The Hundreds digit is:  1
+
+#Part III
+>>> %Run Lab4Loops.py
+0
+1
+2
+3
+>>> %Run Lab4Loops.py
+0
+1
+2
+3
+1
+1
+1
+1
+1
+>>> %Run Lab4Loops.py
+6
+9
+12
+15
+18
+>>> %Run Lab4Loops.py
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 10
+    for t in[3, 5.0, "hello!", -6]
+                                 ^
+SyntaxError: invalid syntax
+
+>>> %Run Lab4Loops.py
+3
+5.0
+hello!
+-6
+>>> %Run Lab4Loops.py
+Traceback (most recent call last):
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 14, in <module>
+    for c in range(3.1):
+TypeError: 'float' object cannot be interpreted as an integer
+>>> %Run Lab4Loops.py
+Traceback (most recent call last):
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 14, in <module>
+    for c in range(9/3):
+TypeError: 'float' object cannot be interpreted as an integer
+>>> %Run Lab4Loops.py
+Traceback (most recent call last):
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 14, in <module>
+    for c in range(3/1):
+TypeError: 'float' object cannot be interpreted as an integer
+>>> %Run Lab4Loops.py
+Traceback (most recent call last):
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 14, in <module>
+    for c in range(3.0):
+TypeError: 'float' object cannot be interpreted as an integer
+>>> %Run Lab4Loops.py
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 14
+    for c in range 3.0, 4.0, 5.0:
+                     ^
+SyntaxError: invalid syntax
+
+>>> %Run Lab4Loops.py
+<class 'float'>
+<class 'float'>
+<class 'float'>
+>>> %Run Lab4Loops.py
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 18
+    for j in rnage(10, 11);
+                          ^
+SyntaxError: invalid syntax
+
+>>> %Run Lab4Loops.py
+  File "\\hd.ad.syr.edu\03\191cd5\Documents\App-SU\Python Programs\Lab4Loops.py", line 18
+    for j in range(10, 11);
+                          ^
+SyntaxError: invalid syntax
+
+>>> %Run Lab4Loops.py
+10
+>>> %Run Lab4Loops.py
+10
+21
+33
+46
+60
+75
+91
+108
+126
+145
+165
+186
+208
+231
+255
+280
+306
+333
+361
+390
+420
+451
+483
+516
+550
+585
+621
+658
+696
+735
+775
+816
+858
+901
+945
+990
+1036
+1083
+1131
+1180
+>>> %Run Lab4Loops.py
+>>> %Run Lab4Loops.py
+>>> %Run Lab4Loops.py
+10
+21
+33
+46
+60
+75
+91
+108
+126
+145
+165
+186
+208
+231
+255
+280
+306
+333
+361
+390
+420
+451
+483
+516
+550
+585
+621
+658
+696
+735
+775
+816
+858
+901
+945
+990
+1036
+1083
+1131
+1180
+>>> %Run Lab4Loops.py
+10
+21
+33
+46
+60
+75
+91
+108
+126
+145
+165
+186
+208
+231
+255
+280
+306
+333
+361
+390
+420
+451
+483
+516
+550
+585
+621
+658
+696
+735
+775
+816
+858
+901
+945
+990
+>>> %Run Lab4Loops.py
+>>> %Run Lab4Loops.py
+>>> %Run Lab4Loops.py
+>>> %Run Lab4Loops.py
+10
+21
+33
+46
+60
+75
+91
+108
+126
+145
+>>> %Run Lab4Loops.py
+10
+21
+33
+46
+60
+>>> %Run Lab4Loops.py
+10
+21
+33
+46
+>>> %Run Lab4Loops.py
+200
+199
+198
+197
+196
+195
+194
+193
+192
+191
+190
+189
+188
+187
+186
+185
+184
+183
+182
+181
+180
+179
+178
+177
+176
+175
+174
+173
+172
+171
+170
+169
+168
+167
+166
+165
+164
+163
+162
+161
+160
+159
+158
+157
+156
+155
+154
+153
+152
+151
+150
+149
+148
+147
+146
+145
+144
+143
+142
+141
+140
+139
+138
+137
+136
+135
+134
+133
+132
+131
+130
+129
+128
+127
+126
+125
+124
+123
+122
+121
+120
+119
+118
+117
+116
+115
+114
+113
+112
+111
+110
+109
+108
+107
+106
+105
+104
+103
+102
+101
+100
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+87
+86
+85
+84
+83
+82
+81
+80
+79
+78
+77
+76
+75
+74
+73
+72
+71
+70
+69
+68
+67
+66
+65
+64
+63
+62
+61
+60
+59
+58
+57
+56
+55
+54
+53
+52
+51
+50
+49
+48
+47
+46
+45
+44
+43
+42
+41
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+28
+27
+26
+25
+24
+23
+22
+21
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+>>> %Run Lab4Loops.py
+200
+199
+198
+197
+196
+195
+194
+>>> %Run Lab4Loops.py
+403
+
+#Part IV
+Python 3.7.1 (bundled)
+>>> %cd 'H:\App-SU\Python Programs'
+>>> %Run Lab4partIV.py
+900
+>>> %Run Lab4partIV.py
+9455
+>>> %Run Lab4partIV.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Lab4partIV.py", line 3, in <module>
+    sum = sum + i**2
+TypeError: unsupported operand type(s) for +: 'builtin_function_or_method' and 'int'
+>>> %Run Lab4partIV.py
+900
+>>> %Run Lab4partIV.py
+0
+1
+5
+14
+30
+55
+91
+140
+204
+285
+385
+506
+650
+819
+1015
+1240
+1496
+1785
+2109
+2470
+2870
+3311
+3795
+4324
+4900
+5525
+6201
+6930
+7714
+8555
+9455
+>>> %Run Lab4partIV.py
+9455
+>>> %Run Lab4partIV.py
+0
+>>> %Run Lab4partIV.py
+166616660120
+>>> %Run Lab4partIV.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Lab4partIV.py", line 7
+    for i in range(40, 100 2):
+                           ^
+SyntaxError: invalid syntax
+>>> %Run Lab4partIV.py
+151820
+>>> %Run Lab4partIV.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Lab4partIV.py", line 13, in <module>
+    sum = sum + 1/i
+ZeroDivisionError: division by zero
+>>> %Run Lab4partIV.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Lab4partIV.py", line 13, in <module>
+    sum = sum + 1/i+1
+ZeroDivisionError: division by zero
+>>> %Run Lab4partIV.py
+5.177377517639621
+>>> %Run Lab4partIV.py
+7.484470860550343
+>>> 

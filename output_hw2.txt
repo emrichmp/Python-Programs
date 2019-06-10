@@ -1,0 +1,115 @@
+#DiscountHeaven.py outputs
+Discount Heaven where the prices will make you smile!
+For each item, enter the number, then press enter.
+Tire: 50
+soup bowls: 23
+hats 47
+Skate boards: 11
+Pillows: 30
+tires 	 $ 5319.98 	 50
+soup bowls 	 $ 39.4 	 23
+hats 	 $ 248.5 	 47
+skateboards 	 $ 459.98 	 11
+pillows 	 $ 602.0 	 30
+>>> %Run DiscountHeaven.py
+Discount Heaven where the prices will make you smile!
+For each item, enter the number, then press enter.
+Tire: 35
+soup bowls: 4
+hats 7
+Skate boards: 12
+Pillows: 3
+tires 	 $ 3779.9700000000003 	 35
+soup bowls 	 $ 7.52 	 4
+hats 	 $ 38.5 	 7
+skateboards 	 $ 480.0 	 12
+pillows 	 $ 63.0 	 3
+>>> %Run DiscountHeaven.py
+Discount Heaven where the prices will make you smile!
+For each item, enter the number, then press enter.
+Tire: 3
+soup bowls: 4
+hats 7
+Skate boards: 2
+Pillows: 15
+tires 	 $ 419.97 	 3
+soup bowls 	 $ 7.52 	 4
+hats 	 $ 38.5 	 7
+skateboards 	 $ 99.98 	 2
+pillows 	 $ 303.0 	 15
+-------------------------------------------
+total 	 $ 868.97 	 31
+Come Again!
+>>> %Run DiscountHeaven.py
+Discount Heaven where the prices will make you smile!
+For each item, enter the number, then press enter.
+Tire: 5
+soup bowls: 7
+hats 4
+Skate boards: 17
+Pillows: 400
+tires 	 $ 559.99 	 5
+soup bowls 	 $ 11.879999999999999 	 7
+hats 	 $ 21.0 	 4
+skateboards 	 $ 699.98 	 17
+pillows 	 $ 8000.0 	 400
+-------------------------------------------
+total 	 $ 9292.85 	 433
+Come Again!
+
+#Distances.py Outputs
+How many pairs of points? 1
+start point - enter x, y 3,4
+end point - enter x, y 4,5
+Distance : 1.4142135623730951
+>>> %Run Distances.py
+How many pairs of points? 2
+start point - enter x, y 5,4
+end point - enter x, y 5,6
+Distance : 2.0
+start point - enter x, y 4,0
+end point - enter x, y 0,3
+Distance : 5.0
+>>> %Run Distances.py
+How many pairs of points? 3
+start point - enter x, y 4,3
+end point - enter x, y 6,7
+Distance : 4.47213595499958
+start point - enter x, y 0,4
+end point - enter x, y 3,0
+Distance : 5.0
+start point - enter x, y 2,2
+end point - enter x, y 2,4
+Distance : 2.0
+
+#Growth.py outputs
+>>> %Run Growth.py
+Enter a value for a: 1
+x 	 1000+ax 	 x^a 	 a^x
+0 	 1000 	 0 	 1
+5 	 1005 	 5 	 1
+10 	 1010 	 10 	 1
+15 	 1015 	 15 	 1
+20 	 1020 	 20 	 1
+25 	 1025 	 25 	 1
+30 	 1030 	 30 	 1
+>>> %Run Growth.py
+Enter a value for a: 3
+x 	 1000+ax 	 x^a 	 a^x
+0 	 1000 	 0 	 1
+5 	 1015 	 125 	 243
+10 	 1030 	 1000 	 59049
+15 	 1045 	 3375 	 14348907
+20 	 1060 	 8000 	 3486784401
+25 	 1075 	 15625 	 847288609443
+30 	 1090 	 27000 	 205891132094649
+>>> %Run Growth.py
+Enter a value for a: 4
+x 	 1000+ax 	 x^a 	 a^x
+0 	 1000 	 0 	 1
+5 	 1020 	 625 	 1024
+10 	 1040 	 10000 	 1048576
+15 	 1060 	 50625 	 1073741824
+20 	 1080 	 160000 	 1099511627776
+25 	 1100 	 390625 	 1125899906842624
+30 	 1120 	 810000 	 1152921504606846976

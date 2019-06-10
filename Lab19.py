@@ -1,0 +1,73 @@
+
+import math
+from random import randrange
+
+def readNumbers(fileName):
+    numfile = open(fileName, "r")
+    numList = []
+    for line in numfile:
+        numList.append(int(line))
+    numfile.close()
+    
+    return numList
+
+def average(aList):
+    sum = 0
+    for i in range(len(aList)):
+        sum = sum+aList[i]
+    a = (sum/len(aList))
+    return a
+
+def stdDev(aList, avg):
+    sd3 = 0
+    for i in range(len(aList)):
+        sd1 = avg-aList[i]
+        sd2 = sd1**2
+        sd3 = sd3 + sd2
+    sd4 = sd3/(len(aList))
+    sd5 = math.sqrt(sd4)
+    return sd5
+        
+def copy(aList):
+    copy = []
+    copy = aList
+    return copy
+
+def median(aList):
+    aList.sort()
+    if (len(aList)%2) == 1:
+        median = aList[(len(aList)//2)+1]
+        return median
+    elif (len(aList)%2) == 0:
+        median1 = aList[(len(aList)/2)]
+        median2 = aList[(len(aList)/2)+1]
+        return median1, median2
+
+def makeList(n):
+    bList = []
+    for i in range(1,n+1):
+        bList.append(i)
+    return bList
+
+def shuffle(aList):
+    for i in range(len(aList)):
+        r = randrange(i,len(aList))
+        aList[i],aList[r] = aList[r],aList[i]
+    return aList
+        
+def main():
+    numList = readNumbers("ages.txt")
+    print(numList)
+    avg = average(numList)
+    print(avg)
+    sd = stdDev(numList,avg)
+    print(sd)
+    c = copy(numList)
+    print(c)
+    m = median(c)
+    print(m)
+    myList = makeList(10)
+    print(myList)
+    shuffle(myList)
+    print(myList)
+main()

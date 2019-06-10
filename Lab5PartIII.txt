@@ -1,0 +1,25 @@
+#Emrich-Michael Perrier
+
+def main():
+    m=1
+    k = eval(input("Give me a number "))
+    for i in range(1,k,1):
+        m = float(i)*m
+    print(m)
+main()
+
+OUTPUT
+Give me a number 5
+24
+>>> %Run Lab5PartIII.py
+Give me a number 100
+9.33262154439441e+155
+>>> %Run Lab5PartIII.py
+Give me a number 100
+933262154439441526816992388562667004907159682643816214685929638952175999932299156089414639761565182862536979208272237582511852109168640000000000000000000000
+>>> %Run Lab5PartIII.py
+Give me a number 10
+362880.0
+>>> %Run Lab5PartIII.py
+Give me a number 100
+9.33262154439441e+155

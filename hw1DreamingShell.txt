@@ -1,0 +1,63 @@
+Python 3.7.1 (bundled)
+>>> %cd 'H:\App-SU\Python Programs'
+>>> %Run Dreaming.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Dreaming.py", line 4
+    print():
+           ^
+SyntaxError: invalid syntax
+>>> %Run Dreaming.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Dreaming.py", line 8
+    main():
+          ^
+SyntaxError: invalid syntax
+>>> %Run Dreaming.py
+Where do you want to visit? LA
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Dreaming.py", line 8, in <module>
+    main()
+  File "H:\App-SU\Python Programs\Dreaming.py", line 2, in main
+    p = eval(input("Where do you want to visit? "))
+  File "<string>", line 1, in <module>
+NameError: name 'LA' is not defined
+>>> %Run Dreaming.py
+Where do you want to visit? LA
+What do you like to drink? Coke
+
+Welcome to SU
+
+While you are here you can dream about drinking  Coke  in  LA !
+>>> %Run Dreaming.py
+Where do you want to visit? NYC
+What do you like to drink? Pepsi
+
+Welcome to SU
+
+While you are here you can dream about drinking Pepsi in  NYC !
+>>> %Run Dreaming.py
+Where do you want to visit? NYC
+What do you like to drink? Water
+
+Welcome to SU
+
+While you are here you can dream about drinking Water in NYC !
+>>> %Run Dreaming.py
+Traceback (most recent call last):
+  File "H:\App-SU\Python Programs\Dreaming.py", line 7
+    print("While you are here you can dream about drinking",d,"in", p"!")
+                                                                       ^
+SyntaxError: invalid syntax
+>>> %Run Dreaming.py
+Where do you want to visit? LA
+What do you like to drink? Water
+
+Welcome to SU
+
+While you are here you can dream about drinking Water in LA !
+>>> %Run Dreaming.py
+Where do you want to visit? Cali
+What do you like to drink? Milk
+
+Welcome to SU
+While you are here you can dream about drinking Milk in Cali !

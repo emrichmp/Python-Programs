@@ -1,0 +1,98 @@
+#exploringFunctions.py
+# Emrich-Michael Perrier
+# 11:40 Lecture
+# Study RETURN VALUES and
+# FORMAL PARAMETERS/ ARGUMENTS in functions.
+
+def main():
+    
+    # Part B
+    # comment 1
+    # divAndMod(89,5)
+    # comment 2
+    #rewriter('w')
+    # comment 3
+    #triple(5)
+    
+    # Part C
+    # comment 4
+    #x = triple(1.1)
+    #print("x = {0:.2f}".format(x))
+    # comment 5
+    #a = rewriter('w')
+    #print("\na= ", a)
+    # comment 6
+    #r = divAndMod(34,5)
+    #print("r= ", r)
+    
+    # Part D
+    # comment 7
+    #y = 2.1
+    #x = triple(y)
+    #print("x = {0:.2f}".format(x))
+    #print("y = {0:.2f}".format(y))
+    # comment 8
+    #n = 23
+    #d = 10
+    #r = divAndMod(n,d)
+    #print("r =", r)
+    #print("n =", n, "d =", d)
+    # comment 9
+    #s = rewriter(str('s'))
+    #print("\ns=", s)
+    
+    # Part E
+    rewriter('*')
+    rewriter('$')
+    rewriter('N')
+    print()
+    n1 = 13
+    d = 5
+    n2 = 15
+    print("Dividing 13 by 5: ")
+    r1 = divAndMod(n1,d)
+    print("\t\tThe remainder is", r1)
+    print("Dividing 15 by 5: ")
+    r2 = divAndMod(n2,d)
+    print("\t\tThe remainder is", r2)
+    print("+-+-+-+-+-+-+-+-+-+-")
+    t = triple(11.1)
+    print("When I triple some number I get {0:.1f}".format(t))
+    print()
+    e = rewriter('e')
+    c = print(" "), rewriter('c')
+    s = print("  "), rewriter('s')
+    # end main()
+    
+
+# Print the parameter 5 times.
+# Does not advance to the next line.
+# let is the formal parameter
+# let is a string
+def rewriter( let):
+    print(let*5, end="")
+
+
+# triple the number n.
+# n is the formal parameter.
+# Note, no printed output.
+def triple(n):
+    answer = 3.0 * n
+    return answer
+# end triple
+
+
+# print num // den
+# returns num % den
+# num and den are formal parameters, should be int
+def divAndMod( num, den ):
+    quotient = num // den
+    remainder = num % den
+    print("\t\tThe quotient is {0:}".format(quotient))
+    return remainder
+# end divAndMod
+
+
+
+
+    

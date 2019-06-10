@@ -1,0 +1,88 @@
+Pt 1
+Enter date as mm/dd/yyyy: 03/30/2019
+03/30/2019 is day  89 of the year.
+1 for Sunday
+2 for Monday
+3 for Tuesday
+4 for Wednesday
+5 for Thursday
+6 for Friday
+7 for Saturday
+What day of the week is January 1st? (Enter the number) 3
+03/30/2019 falls on a Saturday
+>>> %Run DayofYear.py
+Enter date as mm/dd/yyyy: 01/01/2020
+01/01/2020 is day  1 of the year.
+1 for Sunday
+2 for Monday
+3 for Tuesday
+4 for Wednesday
+5 for Thursday
+6 for Friday
+7 for Saturday
+What day of the week is January 1st? (Enter the number) 7
+01/01/2020 falls on a Saturday
+
+Pt 2
+>>> %Run LoanPayments.py
+Principal: 1000
+Annual interest rate: 9
+How many months is the loan? 6
+171.07
+Principal              1000.00             Monthly payment               171.07
+Annual Interest        9.00 %              Term                       6  months
+
+Payment             interest               Pay to principal              Balance
+1                       7.50               163.57                         828.93
+2                       6.22               164.85                         657.86
+3                       4.93               166.13                         486.79
+4                       3.65               167.42                         315.72
+5                       2.37               168.70                         144.66
+6                       1.08               169.98                         -26.41
+Due: $ -26.41
+>>> %Run LoanPayments.py
+Principal: 100000
+Annual interest rate: 4.5
+How many months is the loan? 36
+2974.69
+Principal            100000.00             Monthly payment              2974.69
+Annual Interest        4.50 %              Term                      36  months
+
+Payment               interest            Pay to principal              Balance
+1                     375.00              2599.69                       97025.31
+2                     363.84              2610.85                       94050.62
+3                     352.69              2622.00                       91075.92
+4                     341.53              2633.16                       88101.23
+5                     330.38              2644.31                       85126.54
+6                     319.22              2655.47                       82151.85
+7                     308.07              2666.62                       79177.15
+8                     296.91              2677.78                       76202.46
+9                     285.76              2688.93                       73227.77
+10                     274.60              2700.09                       70253.08
+11                     263.45              2711.24                       67278.38
+12                     252.29              2722.40                       64303.69
+13                     241.14              2733.55                       61329.00
+14                     229.98              2744.71                       58354.31
+15                     218.83              2755.86                       55379.61
+16                     207.67              2767.02                       52404.92
+17                     196.52              2778.17                       49430.23
+18                     185.36              2789.33                       46455.54
+19                     174.21              2800.48                       43480.84
+20                     163.05              2811.64                       40506.15
+21                     151.90              2822.79                       37531.46
+22                     140.74              2833.95                       34556.77
+23                     129.59              2845.10                       31582.07
+24                     118.43              2856.26                       28607.38
+25                     107.28              2867.41                       25632.69
+26                      96.12              2878.57                       22658.00
+27                      84.97              2889.72                       19683.30
+28                      73.81              2900.88                       16708.61
+29                      62.66              2912.04                       13733.92
+30                      51.50              2923.19                       10759.23
+31                      40.35              2934.35                        7784.53
+32                      29.19              2945.50                        4809.84
+33                      18.04              2956.66                        1835.15
+34                       6.88              2967.81                       -1139.54
+35                      -4.27              2978.97                       -4114.24
+36                     -15.43              2990.12                       -7088.93
+Due: $ -7088.93
